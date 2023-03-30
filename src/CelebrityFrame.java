@@ -82,5 +82,6 @@ public class CelebrityFrame extends JFrame {
 		LayoutManager layout = panelCards.getLayout();
 		CardLayout cardLayout = (CardLayout) layout;
 		cardLayout.show(panelCards, screen);
+
 	}
 }

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Locale;
 
 /**
  * The framework for the Celebrity Game project
@@ -57,6 +56,10 @@ public class CelebrityGame {
 		}
 	}
 
+	public void end(){
+
+	}
+
 	/**
 	 * Adds a Celebrity of specified type to the game list
 	 * 
@@ -112,5 +115,9 @@ public class CelebrityGame {
 	 */
 	public String sendClue() {
 		return gameCelebrity.getClue(); // stub
+	}
+
+	public CelebrityFrame getGameWindow(){
+		return gameWindow;
 	}
 }

@@ -243,7 +243,11 @@ public class CelebrityPanel extends JPanel implements ActionListener {
             JButton clicked = (JButton) source;
             if (clicked.getText().equals("Submit guess")) {
                 updateScreen();
-
+            }
+            else if (clicked.getText().equals("Start again")){
+                CelebrityGame game = new CelebrityGame();
+                game.getGameWindow().setBounds(controller.getGameWindow().getBounds());
+                controller.getGameWindow().dispose();
             }
         }
     }
